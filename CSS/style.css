@@ -1,0 +1,702 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+ background-color: rgb(31, 0, 31);
+}
+
+.outline-box{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100vh;
+}
+
+.main-outer-box{
+ background-color: white;
+ width: 95%;
+ height: 90vh;
+ border-radius: 30px;
+}
+
+.inner-grid{
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.two-columns{
+ display: grid;
+ grid-template-columns: 0.8fr 2.5px 1.4fr;
+ height: 85%;
+ column-gap: 10px;
+}
+
+.column-1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-left: 35px;
+}
+
+.column-3{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ column-gap: 20px;
+ justify-content: center;
+ align-items: flex-start;
+ row-gap: 15px;
+ padding-right: 35px;
+ margin-left: 15px;
+}
+
+.column-2{
+ background-color: rgb(105, 0, 105);
+ border-radius: 50px;
+}
+
+.sofia-pic{
+ max-width: 25%;
+ border-radius: 50%;
+ margin-bottom: 10px;
+ border: 4px solid rgb(195, 0, 195);
+}
+
+.sofia-intro-text{
+ font-family: sans-serif;
+ font-size: 25px;
+}
+
+.sofia-intro-text h2{
+ color: rgb(11, 11, 11);
+ font-size: 55px;
+ margin-bottom: 15px;
+}
+
+.sofia-intro-text h3{
+ color: rgb(40, 40, 40);
+ font-size: 25px;
+ text-transform: uppercase;
+ margin-bottom: 25px;
+}
+
+.intro-introduction{
+ margin-bottom: 10px;
+ color: rgb(70, 70, 70);
+}
+
+.sofia-intro-text p{
+ color: rgb(75, 75, 75);
+ font-size: 17px;
+ margin-bottom: 30px;
+}
+
+.contact-me-link{
+ text-decoration: none;
+ padding: 10px 15px;
+ border-radius: 25px;
+ color: white;
+ background-color: rgb(105, 0, 105);
+ position: relative;
+ transition: 0.3s;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ margin-right: 15px;
+}
+
+.contact-me-link a{
+ text-decoration: none;
+ color: white;
+}
+
+.contact-me-link:hover{
+ background-color: rgb(31, 0, 31);
+ transform: scale(1.1);
+}
+
+.contact-me-link-2{
+ text-decoration: underline;
+ display: inline-block;
+ padding: 10px 5px;
+ border-radius: 25px;
+ color: rgb(105, 0, 105);
+ background-color: transparent;
+ position: relative;
+ transition: 0.3s;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+}
+
+.contact-me-link-2:hover{
+ transform: scale(1.1);
+ color: rgb(31, 0, 31);
+}
+
+.skill-1 svg,
+.skill-2 svg,
+.skill-3 svg,
+.skill-4 svg,
+.skill-5 svg,
+.skill-6 svg,
+.skill-7 svg,
+.skill-8 svg{
+ width: 20%;
+ background-color: rgb(195, 0, 195);
+ stroke: white;
+ border-radius: 50%;
+ padding: 8px;
+ margin-bottom: 3px;
+ transition: 0.3s;
+}
+
+.skill-1 svg:hover,
+.skill-2 svg:hover,
+.skill-3 svg:hover,
+.skill-4 svg:hover,
+.skill-5 svg:hover,
+.skill-6 svg:hover,
+.skill-7 svg:hover,
+.skill-8 svg:hover{
+ transform: scale(1.1);
+}
+
+.skill-1 h4,
+.skill-2 h4,
+.skill-3 h4,
+.skill-4 h4,
+.skill-5 h4,
+.skill-6 h4,
+.skill-7 h4,
+.skill-8 h4{
+font-family: sans-serif;
+font-size: 18px;
+color: rgb(40, 40, 40);
+}
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+font-family: sans-serif;
+font-size: 15.5px;
+color: rgb(75, 75, 75);
+margin-top: 10px;
+}
+
+.social-media i{
+ font-size: 27.5px;
+ margin-top: 35px;
+ background-color: rgb(105, 0, 105);
+ border-radius: 50%;
+ color: white;
+ padding: 6px;
+ margin-right: 15px;
+ transition: 0.3s;
+ cursor: pointer;
+}
+
+.social-media i:hover{
+ transform: scale(1.1);
+ background-color: rgb(31, 0, 31);
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media(max-width: 1380px){
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+ font-size: 15px;
+}
+
+.skill-1 h4,
+.skill-2 h4,
+.skill-3 h4,
+.skill-4 h4,
+.skill-5 h4,
+.skill-6 h4,
+.skill-7 h4,
+.skill-8 h4{
+ font-size: 16px;
+}
+
+.sofia-intro-text p{
+ font-size: 17px;
+}
+
+.sofia-intro-text h3{
+ font-size: 22px;
+}
+
+.intro-introduction{
+ font-size: 19px;
+}
+
+.sofia-intro-text h2{
+ font-size: 50px;
+}
+
+.name-top h1{
+ font-size: 35px;
+}
+
+.contact-me-link{
+ font-size: 18px;
+}
+
+.contact-me-link-2{
+ font-size: 18px;
+}
+
+.social-media i{
+ font-size: 25px;
+}
+
+.skill-1 svg,
+.skill-2 svg,
+.skill-3 svg,
+.skill-4 svg,
+.skill-5 svg,
+.skill-6 svg,
+.skill-7 svg,
+.skill-8 svg{
+ width: 20%;
+ padding: 6px;
+}
+
+}
+
+@media(max-width: 1180px ){
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+ font-size: 14px;
+}
+
+.skill-1 h4,
+.skill-2 h4,
+.skill-3 h4,
+.skill-5 h4,
+.skill-4 h4,
+.skill-6 h4,
+.skill-7 h4,
+.skill-8 h4{
+ font-size: 14px;
+}
+
+.sofia-intro-text p{
+ font-size: 15px;
+}
+
+.sofia-intro-text h3{
+ font-size: 20px;
+}
+   
+.intro-introduction{
+ font-size: 19px;
+}
+   
+.sofia-intro-text h2{
+ font-size: 40px;
+}
+
+.name-top h1{
+ font-size: 30px;
+}
+   
+.contact-me-link{
+ font-size: 16px;
+}
+   
+.contact-me-link-2{
+ font-size: 16px;
+}
+   
+.social-media i{
+ font-size: 22px;
+}
+
+.skill-1 svg,
+.skill-2 svg,
+.skill-3 svg,
+.skill-4 svg,
+.skill-5 svg,
+.skill-6 svg,
+.skill-7 svg,
+.skill-8 svg{
+ width: 20%;
+ padding: 6px;
+}
+
+}
+
+/* 1058px before break */
+@media(max-width: 1058px){
+    
+.sofia-intro-text p{
+ font-size: 20px;
+}
+       
+.sofia-intro-text h3{
+ font-size: 20px;
+}
+          
+.intro-introduction{
+ font-size: 20px;
+ display: none;
+}
+          
+.sofia-intro-text h2{
+ font-size: 45px;
+}
+       
+.name-top h1{
+ font-size:35px;
+ display: none;
+}
+          
+.contact-me-link{
+ font-size: 20px;
+}
+          
+.contact-me-link-2{
+ font-size: 20px;
+}
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+ font-size: 20px;
+}
+    
+.skill-1 h4,
+.skill-2 h4,
+.skill-3 h4,
+.skill-4 h4,
+.skill-5 h4,
+.skill-6 h4,
+.skill-7 h4,
+.skill-8 h4{
+ font-size: 20px;
+}
+
+.two-columns{
+ display: flex;
+ height: 85%;
+ flex-direction: column;
+ column-gap: 0px;
+ text-align: center;
+}
+
+.column-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 35px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+   }
+
+   .column-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+   }
+
+   .main-outer-box{
+    background-color: transparent;
+    width: 94%;
+    border-radius: 30px;
+   }
+
+   .outline-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 252, 255);
+    margin-bottom: 400px;
+    margin-top: -20px;
+   }
+
+   .sofia-pic{
+    max-width: 25%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid rgb(195, 0, 195);
+   }
+
+   body{
+    background-color: rgb(255, 252, 255);
+   }
+
+.skill-1 svg,
+.skill-2 svg,
+.skill-3 svg,
+.skill-4 svg,
+.skill-5 svg,
+.skill-6 svg,
+.skill-7 svg,
+.skill-8 svg{
+ width: 20%;
+ padding: 6px;
+}
+
+.contact-me-link{
+    margin-right: 25px;
+    text-align: center;
+   }
+
+   .social-media i{
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 32px;
+   }
+
+   .skill-1 svg, .skill-2 svg, .skill-3 svg, .skill-4 svg, .skill-5 svg, .skill-6 svg, .skill-7 svg, .skill-8 svg {
+      width: 20%;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+   .column-3 {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 40px;
+  }
+}
+
+
+@media (max-width: 660px) {
+ .column-3{
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .sofia-pic{
+    max-width: 35%;
+   }
+
+   .outline-box{
+    margin-bottom: 800px;
+   }
+
+}
+
+
+@media (max-width: 450px) {
+    .column-3{
+       grid-template-columns: 1fr;
+       row-gap: 60px;
+    }
+   
+    .sofia-pic{
+       max-width: 45%;
+      }
+   
+      .outline-box{
+       margin-bottom: 950px;
+      }
+
+      .sofia-intro-text h3{
+        font-size: 19.5px;
+       }
+
+       .sofia-intro-text p{
+        font-size: 20px;
+       }
+
+       .skill-1 svg, .skill-2 svg, .skill-3 svg, .skill-4 svg, .skill-5 svg, .skill-6 svg, .skill-7 svg, .skill-8 svg {
+         width: 10%;
+         margin-bottom: 10px;
+     }
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+ font-size: 20px;
+}
+   
+   }
+
+
+   @media (max-width: 400px) {
+   
+      .outline-box{
+       margin-bottom: 1060px;
+      }
+
+      .sofia-intro-text p{
+        font-size: 20px;
+       }
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+ font-size: 20px;
+}
+
+.social-media i{
+   margin-right: 10px;
+   margin-left: 10px;
+   text-align: center;
+   font-size: 30px;
+  }
+
+  .skill-1 svg, .skill-2 svg, .skill-3 svg, .skill-4 svg, .skill-5 svg, .skill-6 svg, .skill-7 svg, .skill-8 svg {
+   width: 12%;
+   margin-bottom: 10px;
+}
+   
+}
+
+
+@media (max-width: 350px) {
+   
+.outline-box{
+ margin-bottom: 1200px;
+}
+
+.sofia-intro-text p{
+  font-size: 20px;
+}
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+ font-size: 20px;
+}
+
+.contact-me-link-2 {
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.social-media i{
+   margin-right: 7.2px;
+   margin-left: 7.2px;
+   text-align: center;
+   font-size: 27px;
+  }
+
+  .contact-me-link{
+   margin-right: 3px;
+   text-align: center;
+  }
+
+  .sofia-intro-text h2{
+   font-size: 40px;
+  }
+
+  .skill-1 svg, .skill-2 svg, .skill-3 svg, .skill-4 svg, .skill-5 svg, .skill-6 svg, .skill-7 svg, .skill-8 svg {
+   width: 13%;
+   margin-bottom: 10px;
+}
+   
+}
+
+
+@media (max-width: 300px) {
+   
+   .outline-box{
+    margin-bottom: 1450px;
+   }
+
+   .sofia-intro-text p{
+     font-size: 20px;
+    }
+
+.skill-1 p,
+.skill-2 p,
+.skill-3 p,
+.skill-4 p,
+.skill-5 p,
+.skill-6 p,
+.skill-7 p,
+.skill-8 p{
+font-size: 20px;
+}
+
+.social-media i{
+margin-right: 6px;
+margin-left: 6px;
+text-align: center;
+font-size: 29px;
+}
+
+.contact-me-link{
+margin-right: -10px;
+text-align: center;
+}
+
+.sofia-intro-text h2{
+font-size: 38px;
+}
+
+.skill-1 svg, .skill-2 svg, .skill-3 svg, .skill-4 svg, .skill-5 svg, .skill-6 svg, .skill-7 svg, .skill-8 svg {
+   width: 15%;
+   margin-bottom: 10px;
+}
+
+}
+
+
+
+
+
+
+
